@@ -1,21 +1,7 @@
 {
-  "Domain": ".lab",
+  "Domain": ".lan",
   "Interval": 60,
-  "VCenters": [
-    { "Username": "monitoring", "Password": "monixx", "Hostname": "vcenter-01.dc-01.lab" },
-    { "Username": "monitoring", "Password": "monixx", "Hostname": "vcenter-01.dc-02.lab" },
-    { "Username": "monitoring", "Password": "monixx", "Hostname": "vcenter-02.dc-02.lab" },
-    { "Username": "monitoring", "Password": "monixx", "Hostname": "vcenter-01.home.lab" }
-  ],
-
-  "InfluxDB": {
-    "Prefix": "vsphere_",
-    "Hostname": "http://influxdb-01.dc-01.lab:8086",
-    "Username": "vm",
-    "Password": "vmware334",
-    "Database": "vmware_performance"
-  },
-
+  
   "Metrics": [
     { 
       "ObjectType": [ "VirtualMachine", "HostSystem" ], 
